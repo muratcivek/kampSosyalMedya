@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paylasim_yapma"
+    android:orientation="vertical"
+    android:background="#94A694"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="3dp"
+        app:contentPadding="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#819581"
+        android:layout_marginTop="200dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/acik_ton_buton_sekli"
+
+
+
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/akisGonderiBaslik"
+            android:text="Başlık"
+            android:textColor="#E3E1E1"
+            android:textSize="19sp"
+            android:layout_marginTop="7dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/akisGonderiDetay"
+            android:text="Detay"
+            android:textColor="#E3E1E1"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/akisGonderiFoto"
+            android:background="@drawable/takip_et_sekil"/>
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/takip_et_sekil"
+            android:layout_marginTop="5dp"
+            android:drawableRight="@drawable/kayit_ol_foto_ekle"
+            android:fontFamily="sans-serif"
+            android:hint=" Fotoğraf Ekle "
+            android:textColor="#E3E1E1"
+            android:textColorHint="#E3E1E1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.202"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:hint="konum"
+            android:textSize="20sp"
+            android:textColorHint="#E3E1E1"
+
+
+
+            android:layout_marginBottom="7dp"/>
+
+        <Button
+            android:id="@+id/kayit_ol_foto_ekle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/takip_et_sekil"
+            android:drawableRight="@drawable/paylas"
+            android:fontFamily="sans-serif"
+            android:hint=" Paylaş"
+            android:textColor="#E3E1E1"
+            android:textColorHint="#E3E1E1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.202" />
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

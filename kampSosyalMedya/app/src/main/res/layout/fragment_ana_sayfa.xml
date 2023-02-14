@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_akis_sayfasi"
+    android:orientation="vertical"
+    android:background="#819581"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kullaniciaraEditText"
+        android:text="Ana Sayfa"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+
+        android:textAlignment="center"
+        android:textSize="33sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="   Paylaşım yap   "
+        android:textStyle="bold"
+        android:textColor="#D0DADC"
+        android:id="@+id/paylasdeneme"
+        android:background="@drawable/takip_et_sekil"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/profil_sayfasi_sekil">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Gönderiler"
+
+            android:textSize="26sp"></TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gonderilerRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+</LinearLayout>
